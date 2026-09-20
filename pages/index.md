@@ -171,9 +171,37 @@ src: ./43-importer-csv/slide.md
 ---
 
 ---
-src: ./44-api-excel-frequentes/slide.md
+src: ./44-exporter-pdf/slide.md
 ---
 
 ---
-src: ./45-patterns-vba-frequents/slide.md
+src: ./45-bouton-macro/slide.md
+---
+
+---
+src: ./46-controles-simples/slide.md
+---
+
+---
+src: ./47-exercice-mini-reporting/slide.md
+---
+
+---
+src: ./48-tcd-actualiser/slide.md
+---
+
+---
+src: ./49-tcd-source-dynamique/slide.md
+---
+
+---
+src: ./50-manipuler-graphique/slide.md
+---
+
+---
+src: ./51-api-excel-frequentes/slide.md
+---
+
+---
+src: ./52-patterns-vba-frequents/slide.md
 ---
