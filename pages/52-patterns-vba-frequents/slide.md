@@ -15,15 +15,16 @@ slide_info: false
 | Dates | `Date`, `Now`, `DateAdd`, `DateDiff`, `Format` | calculer ou afficher une date |
 | Dialogue | `MsgBox`, `InputBox` | interaction simple avec l'utilisateur |
 | Erreurs | `On Error GoTo`, `Err.Number`, `Err.Description` | reprendre la main proprement |
+| Débogage | `Debug.Print` | vérifier une valeur pendant l'exécution |
 | Performance | `Application.ScreenUpdating = False` | accélérer les macros longues |
-| Raccourcis | `Application.OnKey`, Alt+F8 > Options | lancer vite une macro |
-| Objet externe | `CreateObject(...)` | appeler fichier, HTTP ou automatisation |
-| Excel calcul | `WorksheetFunction.SumIf`, `CountIf` | réutiliser des fonctions Excel |
+| Pour aller plus loin | `WorksheetFunction`, automatisation externe | pistes à explorer hors du coeur du cours |
 
 <!--
 Notes formateur :
 
-Faire le lien avec les raccourcis Excel : ce n'est pas une liste plate, c'est une boîte à outils par situation.
+Faire le lien avec les macros écrites pendant le cours : ce n'est pas une liste plate, c'est une boîte à outils par situation.
 
 Message à faire passer : quand ils bloquent, ils doivent identifier la famille du problème avant de chercher la syntaxe exacte.
+
+La dernière ligne ouvre quelques pistes, sans transformer la conclusion en nouvelle leçon.
 -->
