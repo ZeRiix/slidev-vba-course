@@ -17,18 +17,20 @@ Créer une macro `ClassifyDynamicAmounts`.
 
 Point de départ dans Excel :
 
-| Client | Montant | Statut |
-|---|---:|---|
-| Nadia Martin | 1200 | |
-| Paul Durand | 850 | |
-| Emma Petit | 400 | |
+| Client | Ville | Montant | Payé | Statut |
+|---|---|---:|---|---|
+| Nadia Martin | Paris | 1200 | Non | |
+| Paul Durand | Lyon | 850 | Oui | |
+| Emma Petit | Nantes | 400 | Non | |
 
 Attendu :
 
 - trouver la dernière ligne automatiquement
 - parcourir de la ligne 2 à la dernière ligne
-- écrire le statut en colonne C
-- afficher le total en bas de la colonne B
+- lire le montant en colonne C
+- écrire `Important` en colonne E si le montant est supérieur à 1000
+- écrire `Normal` en colonne E sinon
+- afficher le total des montants en bas de la colonne C
 
 </div>
 

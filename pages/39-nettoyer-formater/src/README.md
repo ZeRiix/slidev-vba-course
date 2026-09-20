@@ -6,6 +6,14 @@ Objectif : améliorer rapidement la lisibilité d'une feuille Excel avec des app
 
 Importer ou copier `reporting_data.csv` dans Excel.
 
+Le fichier contient les colonnes suivantes :
+
+- Service
+- Mois
+- Montant en colonne `C`
+- Statut en colonne `D`
+- Commentaire en colonne `E`
+
 ## Travail attendu
 
 Créer une macro `PrepareReportTable` qui :

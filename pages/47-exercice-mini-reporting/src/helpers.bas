@@ -6,7 +6,7 @@ Sub ImportReportingCsv()
     Dim targetSheet As Worksheet
 
     filePath = ThisWorkbook.Path & "\reporting_data.csv"
-    Set targetSheet = ThisWorkbook.Worksheets("Data")
+    Set targetSheet = GetOrCreateSheet("Data")
 
     targetSheet.Cells.Clear
 
@@ -26,10 +26,24 @@ End Sub
 
 Sub ExportReportToPdf()
     Dim outputPath As String
+    Dim reportSheet As Worksheet
 
     outputPath = ThisWorkbook.Path & "\reporting.pdf"
+    Set reportSheet = GetOrCreateSheet("Report")
 
-    ThisWorkbook.Worksheets("Report").ExportAsFixedFormat _
+    reportSheet.ExportAsFixedFormat _
         Type:=xlTypePDF, _
         Filename:=outputPath
 End Sub
+
+Private Function GetOrCreateSheet(sheetName As String) As Worksheet
+    On Error Resume Next
+    Set GetOrCreateSheet = ThisWorkbook.Worksheets(sheetName)
+    On Error GoTo 0
+
+    If GetOrCreateSheet Is Nothing Then
+        Set GetOrCreateSheet = ThisWorkbook.Worksheets.Add( _
+            After:=ThisWorkbook.Worksheets(ThisWorkbook.Worksheets.Count))
+        GetOrCreateSheet.Name = sheetName
+    End If
+End Function

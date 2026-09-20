@@ -1,7 +1,7 @@
-Service;Mois;Montant;Statut
-Finance;Janvier;1200;Validé
-Finance;Février;850;À relancer
-RH;Janvier;400;Validé
-RH;Février;2500;À relancer
-IT;Janvier;980;Validé
-IT;Février;3100;À relancer
+Service;Mois;Montant;Statut;Commentaire
+Finance;Janvier;1200;Validé;Ancien contrôle
+Finance;Février;850;À relancer;À revoir
+RH;Janvier;400;Validé;Ancienne note
+RH;Février;2500;À relancer;Contrôle manager
+IT;Janvier;980;Validé;Historique import
+IT;Février;3100;À relancer;Commentaire obsolète

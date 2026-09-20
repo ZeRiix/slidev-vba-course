@@ -41,6 +41,8 @@ End Sub
 
 Dans `RefreshReport`, appelez d'abord `ImportReportingCsv`, puis travaillez sur les feuilles `Data` et `Report`.
 
+Les blocs fournis créent les feuilles `Data` et `Report` si elles n'existent pas encore. Vous pouvez donc partir d'un classeur vierge compatible VBA.
+
 La transformation métier attendue consiste à agréger les montants par service et à faire ressortir les lignes dont le statut vaut `À relancer`.
 
 Ajoutez un bouton dans Excel et affectez-lui la macro `RefreshReport`.
