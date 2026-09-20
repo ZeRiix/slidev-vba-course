@@ -1,0 +1,26 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "types": ["vite/client", "web"],
+  },
+  "exclude": ["dist", "node_modules"],
+  "include": [
+    "setup/**/*.ts",
+    "examples/**/*.ts", 
+    "components/**/*.ts",
+    "components/**/*.vue",
+    "composables/**/*.ts",
+    "layouts/**/*.vue",
+    "pages/**/*.vue",
+    "global-bottom.vue",
+  ],
+}

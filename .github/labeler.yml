@@ -1,0 +1,15 @@
+package: 
+  - changed-files:
+      - any-glob-to-any-file: "package.json"
+
+github:
+  - changed-files:
+      - any-glob-to-any-file: ".github/**/*"
+
+wip:
+  - changed-files:
+      - any-glob-to-any-file: "**/*"
+  
+slide:
+  - changed-files:
+      - any-glob-to-any-file: "*.md"

@@ -1,0 +1,33 @@
+{
+	"vue-template": {
+		"prefix": "vuet",
+		"scope": "vue",
+		"body": [
+			"<script setup lang=\"ts\">",
+			"interface Props {",
+			"",
+			"}",
+			"",
+			"defineProps<Props>();",
+			"$1",
+			"</script>",
+			"",
+			"<template>",
+			"   <div></div>",
+			"</template>"
+		],
+		"description": "vue template"
+	},
+	"expect-type": {
+		"prefix": "tuet",
+		"scope": "typescript",
+		"body": [
+			"type check = ExpectType<",
+			"\ttypeof $1,",
+			"\t$2,",
+			"\t\"strict\"",
+			">;",
+		],
+		"description": "template tu",
+	},
+}

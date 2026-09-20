@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Logo placeholder</title>
+  <desc id="desc">Logo temporaire a remplacer.</desc>
+  <rect width="320" height="320" fill="#090907"/>
+  <rect x="42" y="42" width="236" height="236" fill="#ffffff"/>
+  <path d="M88 210V110h34l38 58 38-58h34v100h-34v-49l-30 45h-16l-30-45v49H88Z" fill="#090907"/>
+  <rect x="88" y="232" width="144" height="16" fill="#ffd43b"/>
+</svg>

@@ -1,0 +1,43 @@
+{
+  "name": "slidev-vba-course",
+  "type": "module",
+  "author": {
+    "name": "zeriix",
+    "url": "https://github.com/ZeRiix"
+  },
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "build:local": "slidev build --base ./",
+    "dev": "slidev --open",
+    "export": "slidev export",
+    "test:types": "vue-tsc -p tsconfig.json",
+    "test:lint": "eslint --quiet",
+    "test:lint:fix": "eslint --quiet --fix",
+    "prepare": "husky",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@duplojs/utils": "1.10.3",
+    "@slidev/cli": "52.19.1",
+    "slidev-theme-neversink": "0.4.1",
+    "vue": "3.5.43"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "19.8.1",
+    "@duplojs/eslint": "0.5.0",
+    "@slidev/types": "52.19.1",
+    "@types/web": "0.0.357",
+    "@vue/tsconfig": "0.9.1",
+    "eslint": "9.34.0",
+    "eslint-plugin-vue": "^10.8.0",
+    "husky": "9.1.7",
+    "patch-package": "8.0.1",
+    "sass-embedded": "1.104.1",
+    "typescript": "5.9.3",
+    "typescript-eslint": "^8.57.2",
+    "vue-eslint-parser": "^10.4.0",
+    "vue-tsc": "3.2.6"
+  }
+}
