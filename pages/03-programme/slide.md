@@ -18,7 +18,7 @@ slide_info: false
     <span class="course-toc-list__number">02</span>
     <div>
       <strong>Les bases du langage</strong>
-      <small>Sub, variables, types, chaînes, conversions, conditions, tableaux, boucles et fonctions.</small>
+      <small>Sub, variables, types, conversions, debug, interactions simples, conditions, tableaux, boucles, fonctions et erreurs.</small>
     </div>
   </li>
   <li>

@@ -35,5 +35,5 @@ Notes formateur :
 
 Insister sur le découpage : une fonction porte une règle simple et testable.
 
-Ne pas parler de fonctions Excel personnalisées dans les cellules maintenant. Ici, la fonction sert d'abord à structurer le code VBA.
+Mentionner en une phrase qu'une Function VBA peut aussi devenir une fonction personnalisée utilisable dans Excel, sans développer.
 -->

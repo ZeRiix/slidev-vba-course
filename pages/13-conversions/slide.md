@@ -2,7 +2,7 @@
 layout: StaticCodeExampleLayout
 kicker: Conversions
 title: Passer d'un type à l'autre
-caption: Une saisie texte doit parfois devenir un nombre, une date ou un booléen.
+caption: Une valeur texte doit parfois devenir un nombre, une date ou un montant.
 slide_info: false
 ---
 
@@ -10,11 +10,11 @@ slide_info: false
 Sub ConversionExample()
     Dim priceText As String
     Dim price As Currency
+    Dim label As String
 
     priceText = "19,90"
     price = CCur(priceText)
-
-    Debug.Print price * 2
+    label = CStr(price)
 End Sub
 ```
 
@@ -23,6 +23,11 @@ End Sub
 - `CDbl` : valeur vers décimal.
 - `CCur` : valeur vers montant.
 - `CDate` : valeur vers date.
+
+<TheDocumentation
+  label="Documentation : conversions"
+  href="https://learn.microsoft.com/fr-fr/office/vba/language/reference/user-interface-help/conversion-functions"
+/>
 
 <!--
 Notes formateur :

@@ -27,7 +27,7 @@ Notes formateur :
 
 Insister sur le danger principal : oublier counter = counter + 1.
 
-Mentionner rapidement qu'il existe d'autres formes de boucles en VBA pour les curieux : Do Until, Loop While, Loop Until, For Each. Ne pas les détailler ici. Avec For et Do While, ils peuvent déjà exprimer tous les cas dont on a besoin dans ce cours.
+Mentionner rapidement qu'il existe d'autres formes de boucles en VBA pour les curieux : Do Until, Loop While, Loop Until. Ne pas les détailler ici.
 
 À faire manipuler :
 - changer la limite ;

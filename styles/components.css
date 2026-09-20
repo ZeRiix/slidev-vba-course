@@ -136,6 +136,47 @@
   line-height: 1;
 }
 
+.course-documentation {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  margin-top: 16px;
+  border: 1px solid rgba(var(--color-primary-rgb), 0.45);
+  border-radius: 7px;
+  background: rgba(var(--color-primary-rgb), 0.14);
+  padding: 8px 11px;
+  color: var(--color-surface);
+  font-size: 0.74rem;
+  font-weight: 850;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.course-documentation:hover {
+  background: rgba(var(--color-primary-rgb), 0.24);
+  color: var(--color-surface);
+}
+
+.course-documentation__icon {
+  display: grid;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  place-items: center;
+  color: var(--color-primary);
+}
+
+.course-documentation__icon svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
 .course-hint {
   margin-top: 22px;
   border-left: var(--accent-border-width) solid var(--color-primary);
@@ -392,4 +433,3 @@
   width: 24px;
   height: 24px;
 }
-

@@ -33,6 +33,11 @@ End Sub
 - `&` construit un libellé à partir de plusieurs morceaux.
 - `Len` vérifie la longueur du résultat.
 
+<TheDocumentation
+  label="Documentation : fonctions de chaîne"
+  href="https://learn.microsoft.com/fr-fr/dotnet/visual-basic/language-reference/functions/string-functions"
+/>
+
 
 <!--
 Notes formateur :

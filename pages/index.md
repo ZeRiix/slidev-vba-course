@@ -47,94 +47,113 @@ src: ./12-nombres-booleens-dates/slide.md
 ---
 
 ---
-src: ./13-conversions-debug/slide.md
+src: ./13-conversions/slide.md
 ---
 
 ---
-src: ./14-conditions-if/slide.md
+src: ./14-observer-programme/slide.md
 ---
 
 ---
-src: ./15-conseils-conditions/slide.md
+src: ./15-msgbox/slide.md
 ---
 
 ---
-src: ./16-select-case/slide.md
+src: ./16-inputbox/slide.md
 ---
 
 ---
-src: ./17-tableaux/slide.md
+src: ./17-conditions-if/slide.md
 ---
 
 ---
-src: ./18-boucle-for/slide.md
+src: ./18-conseils-conditions/slide.md
 ---
 
 ---
-src: ./19-boucle-do-while/slide.md
+src: ./19-select-case/slide.md
 ---
 
 ---
-src: ./20-functions/slide.md
+src: ./20-tableaux/slide.md
 ---
 
 ---
-src: ./21-exercice-traitement-records/slide.md
+src: ./21-boucle-for/slide.md
 ---
 
 ---
-src: ./22-excel-section/slide.md
+src: ./22-boucle-for-each/slide.md
 ---
 
 ---
-src: ./23-definition-macro/slide.md
+src: ./23-boucle-do-while/slide.md
 ---
 
 ---
-src: ./24-modele-objet-excel/slide.md
+src: ./24-functions/slide.md
 ---
 
 ---
-src: ./25-objets-api-excel/slide.md
+src: ./25-gestion-erreur/slide.md
 ---
 
 ---
-src: ./26-range-cells/slide.md
+src: ./26-exercice-traitement-records/slide.md
 ---
 
 ---
-src: ./27-parcourir-lignes-excel/slide.md
+src: ./27-excel-section/slide.md
 ---
 
 ---
-src: ./28-exercice-excel-status/slide.md
+src: ./28-definition-macro/slide.md
 ---
 
 ---
-src: ./29-zone-donnees-dynamique/slide.md
+src: ./29-modele-objet-excel/slide.md
 ---
 
 ---
-src: ./30-exercice-synthese-dynamique/slide.md
+src: ./30-objets-api-excel/slide.md
 ---
 
 ---
-src: ./31-selection-utilisateur/slide.md
+src: ./31-range-cells/slide.md
 ---
 
 ---
-src: ./32-exercice-selection/slide.md
+src: ./32-parcourir-lignes-excel/slide.md
 ---
 
 ---
-src: ./33-nettoyer-formater/slide.md
+src: ./33-exercice-excel-status/slide.md
 ---
 
 ---
-src: ./34-api-excel-frequentes/slide.md
+src: ./34-zone-donnees-dynamique/slide.md
 ---
 
 ---
-src: ./35-patterns-vba-frequents/slide.md
+src: ./35-exercice-synthese-dynamique/slide.md
 ---
 
+---
+src: ./36-selection-utilisateur/slide.md
+---
+
+---
+src: ./37-exercice-selection/slide.md
+---
+
+---
+src: ./38-nettoyer-formater/slide.md
+---
+
+---
+src: ./39-api-excel-frequentes/slide.md
+---
+
+---
+src: ./40-patterns-vba-frequents/slide.md
+---
