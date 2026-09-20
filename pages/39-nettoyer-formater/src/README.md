@@ -1,19 +1,19 @@
-# Exercice VBA - Mini reporting Excel
+# Exercice VBA - Nettoyer et formater
 
-Objectif : préparer une base de mini-reporting en manipulant plusieurs objets Excel.
+Objectif : améliorer rapidement la lisibilité d'une feuille Excel avec des appels simples de nettoyage et de formatage.
 
 ## Ressource
 
-Importer `reporting_data.csv` dans une feuille nommée `Data`.
+Importer ou copier `reporting_data.csv` dans Excel.
 
 ## Travail attendu
 
-Créer des macros courtes pour :
+Créer une macro `PrepareReportTable` qui :
 
-1. nettoyer la zone de résultat ;
-2. mettre en forme le tableau source ;
-3. créer ou actualiser un tableau croisé dynamique ;
-4. ajouter un bouton Excel qui lance une macro ;
-5. préparer une fonction d'import CSV réutilisable.
+1. récupère la zone de données avec `CurrentRegion` ;
+2. ajuste automatiquement la largeur des colonnes avec `AutoFit` ;
+3. met l'en-tête en gras et lui applique une couleur de fond ;
+4. vide les anciennes valeurs de commentaire en colonne `E` avec `ClearContents` ;
+5. applique un format monétaire à la colonne `C` avec `NumberFormat`.
 
 Le fichier peut être un `.xlsm` créé par vos soins.

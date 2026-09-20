@@ -159,9 +159,21 @@ src: ./40-tables-structurees/slide.md
 ---
 
 ---
-src: ./41-api-excel-frequentes/slide.md
+src: ./41-workflow-excel-section/slide.md
 ---
 
 ---
-src: ./42-patterns-vba-frequents/slide.md
+src: ./42-appels-api-longs/slide.md
+---
+
+---
+src: ./43-importer-csv/slide.md
+---
+
+---
+src: ./44-api-excel-frequentes/slide.md
+---
+
+---
+src: ./45-patterns-vba-frequents/slide.md
 ---

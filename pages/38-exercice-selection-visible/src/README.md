@@ -18,7 +18,8 @@ Créer une macro `ExportVisibleSelection` qui :
 
 1. vérifie que la sélection est une plage Excel ;
 2. récupère uniquement les cellules visibles avec `SpecialCells(xlCellTypeVisible)` ;
-3. vide l'ancienne liste d'export ;
-4. copie les valeurs visibles dans `Export!A2:A...`.
+3. prépare la feuille `Export` ;
+4. vide l'ancienne liste d'export ;
+5. copie les valeurs visibles dans `Export!A2:A...`.
 
 Bonus : ajouter la date d'export en `Export!B1`.

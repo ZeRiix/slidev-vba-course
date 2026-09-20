@@ -20,14 +20,14 @@ Sub PrepareReportTable()
     dataRange.Rows(1).Font.Bold = True
     dataRange.Rows(1).Interior.Color = RGB(217, 225, 242)
 
-    sheet.Range("C2:C" & lastRow).ClearContents
-    sheet.Range("B:B").NumberFormat = "#,##0.00 €"
+    sheet.Range("E2:E" & lastRow).ClearContents
+    sheet.Range("C:C").NumberFormat = "#,##0.00 €"
 End Sub
 ```
 
 ::note::
 
-<TheDownload label="Télécharger le mini-reporting" href="./exercice-outils-excel.zip" />
+<TheDownload label="Télécharger la ressource" href="./exercice-outils-excel.zip" />
 
 - `AutoFit` ajuste les largeurs.
 - `ClearContents` vide les valeurs.
@@ -39,5 +39,5 @@ Notes formateur :
 
 Expliquer que le format n'est pas juste esthétique : il rend le résultat lisible et exploitable.
 
-La ressource peut servir de départ pour un exercice plus complet : importer un CSV, préparer la table, ajouter un bouton, puis actualiser les données.
+Le dataset pourra être réutilisé plus tard pour un exercice de workflow plus complet.
 -->

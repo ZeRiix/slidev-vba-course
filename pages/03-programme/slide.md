@@ -28,4 +28,11 @@ slide_info: false
       <small>Workbook, Worksheet, Range, Cells, lecture, écriture et parcours de lignes.</small>
     </div>
   </li>
+  <li>
+    <span class="course-toc-list__number">04</span>
+    <div>
+      <strong>Automatiser un workflow Excel</strong>
+      <small>Importer, transformer, restituer et déclencher une macro utile.</small>
+    </div>
+  </li>
 </ol>

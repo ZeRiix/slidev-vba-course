@@ -26,6 +26,8 @@ La macro doit :
 
 - vérifier que la sélection est une plage Excel
 - récupérer uniquement les cellules visibles
+- préparer la feuille `Export`
+- vider l'ancien résultat
 - copier les valeurs visibles dans `Export!A2:A...`
 
 </div>
@@ -43,7 +45,8 @@ Sub ExportVisibleSelection()
 
     Set visibleCells = Selection.SpecialCells(xlCellTypeVisible)
 
-    ' TODO: copy visible values to Export
+    ' TODO: prepare Export, clear old values,
+    ' then copy visible values to Export
 End Sub
 ```
 
