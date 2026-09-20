@@ -1,0 +1,13 @@
+Client;Region;Commercial;Statut;Categorie;Montant;Date
+Atelier Martin;Nord;Nadia;A relancer;Maintenance;1850;2026-01-12
+Maison Durand;Ouest;Paul;Gagne;Formation;920;2026-01-18
+BioFrais;Sud;Emma;En cours;Licence;3400;2026-02-03
+Hotel Rivage;Ouest;Nadia;Perdu;Maintenance;760;2026-02-11
+Nova Retail;Est;Lina;A relancer;Licence;4200;2026-02-19
+Clinique Saint-Paul;Nord;Paul;En cours;Support;1280;2026-03-02
+Garage Moreau;Sud;Emma;Gagne;Maintenance;2150;2026-03-08
+Mairie de Belleville;Est;Lina;En cours;Formation;980;2026-03-15
+Cabinet Roche;Nord;Nadia;Perdu;Support;650;2026-03-22
+Logis Central;Ouest;Paul;A relancer;Licence;5100;2026-04-04
+Studio Pixel;Sud;Emma;En cours;Formation;1450;2026-04-13
+Transports Lemoine;Est;Lina;Gagne;Maintenance;2750;2026-04-21

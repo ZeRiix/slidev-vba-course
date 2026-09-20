@@ -143,17 +143,25 @@ src: ./36-selection-utilisateur/slide.md
 ---
 
 ---
-src: ./37-exercice-selection/slide.md
+src: ./37-cellules-visibles/slide.md
 ---
 
 ---
-src: ./38-nettoyer-formater/slide.md
+src: ./38-exercice-selection-visible/slide.md
 ---
 
 ---
-src: ./39-api-excel-frequentes/slide.md
+src: ./39-nettoyer-formater/slide.md
 ---
 
 ---
-src: ./40-patterns-vba-frequents/slide.md
+src: ./40-tables-structurees/slide.md
+---
+
+---
+src: ./41-api-excel-frequentes/slide.md
+---
+
+---
+src: ./42-patterns-vba-frequents/slide.md
 ---
