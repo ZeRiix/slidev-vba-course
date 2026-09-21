@@ -25,7 +25,13 @@ End Sub
 - Les numéros deviennent utiles dans une boucle.
 
 <!--
-Notes formateur :
+Mémo :
 
-Montrer rapidement dans Excel : A2 contient un montant, B2 reçoit le TTC, C2 reçoit un statut.
+`Range("A2").Value` se lit de gauche à droite : prendre l'objet `Range("A2")`, puis lire sa propriété `.Value`.
+
+Dans `Range("B2").Value = amount * 1.2`, la même propriété est utilisée en écriture.
+
+`Cells(ligne, colonne)` utilise des coordonnées numériques : `Cells(2, 3)` correspond à la cellule C2. Cette forme est idéale quand `ligne` vient d'un compteur de boucle.
+
+Sans objet feuille devant, `Range` et `Cells` ciblent la feuille active. Dans une macro robuste, on préfère souvent `sheet.Range(...)` et `sheet.Cells(...)`.
 -->

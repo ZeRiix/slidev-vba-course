@@ -23,9 +23,13 @@ End Sub
 ```
 
 <!--
-Notes formateur :
+Mémo :
 
-Insister sur le bouton comme point d'entrée principal d'un fichier automatisé.
+Un bouton transforme une macro en outil utilisable sans ouvrir le VBE.
 
-Image souhaitée : feuille Excel contenant un bouton "Actualiser le reporting", associé à une macro RefreshReport.
+Pour l'utilisateur, le point d'entrée devient une action métier comme "Actualiser le reporting", pas le nom d'une procédure dans l'éditeur.
+
+`.OnAction = "RefreshReport"` associe une forme Excel au nom d'une macro. Le nom doit rester stable : si la procédure est renommée, le bouton doit être mis à jour.
+
+Ce pattern est fréquent dans les classeurs automatisés : une feuille de paramètres ou de rapport contient un bouton qui lance tout le workflow.
 -->

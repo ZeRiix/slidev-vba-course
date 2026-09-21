@@ -30,14 +30,11 @@ End Sub
 />
 
 <!--
-Notes formateur :
+Mémo :
 
-Montrer l'idée, pas tous les cas limites.
+Une conversion explicite rend visible le passage d'une représentation à une autre : texte vers montant, nombre vers texte, texte vers date, etc.
 
-À expliquer :
-- une valeur affichée comme du texte n'est pas forcément un nombre ;
-- les fonctions CStr, CLng, CDbl, CCur, CDate convertissent explicitement ;
-- une conversion peut échouer si le contenu ne correspond pas au type attendu.
+Ce point est fréquent avec Excel et les CSV : une valeur peut ressembler à un nombre dans une cellule ou dans un fichier, mais arriver dans VBA comme une chaîne.
 
-Éviter encore la gestion d'erreur détaillée : elle viendra plus tard.
+Une conversion peut échouer si le contenu ne correspond pas au type attendu, par exemple `CCur("abc")`. Plus tard, la gestion d'erreur permettra de reprendre la main proprement.
 -->

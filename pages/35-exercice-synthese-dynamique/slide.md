@@ -56,9 +56,11 @@ End Sub
 </div>
 
 <!--
-Notes formateur :
+Mémo :
 
-Cet exercice remplace l'idée de ligne fixe par une vraie logique Excel.
+Cet exercice reprend le classement de montants, mais retire l'hypothèse fragile du nombre de lignes fixe.
 
-Si le groupe avance vite, demander d'ajouter une ligne à la main dans Excel puis de relancer la macro pour vérifier que le code s'adapte.
+Le test important après la macro : ajouter une ligne dans Excel, relancer, et vérifier que la nouvelle ligne est bien traitée sans changer le code.
+
+Le total en bas de colonne oblige à distinguer deux zones : les lignes de données à parcourir, puis la ligne de restitution située après `lastRow`.
 -->

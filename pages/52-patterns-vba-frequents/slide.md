@@ -20,11 +20,21 @@ slide_info: false
 | Pour aller plus loin | `WorksheetFunction`, automatisation externe | pistes à explorer hors du coeur du cours |
 
 <!--
-Notes formateur :
+Mémo :
 
-Faire le lien avec les macros écrites pendant le cours : ce n'est pas une liste plate, c'est une boîte à outils par situation.
+Cette slide est une boîte à outils par situation.
 
-Message à faire passer : quand ils bloquent, ils doivent identifier la famille du problème avant de chercher la syntaxe exacte.
+Pour retrouver une fonction, commencer par formuler le problème :
 
-La dernière ligne ouvre quelques pistes, sans transformer la conclusion en nouvelle leçon.
+- nettoyer ou découper du texte ;
+- convertir une valeur ;
+- vérifier avant de convertir ;
+- travailler avec des dates ;
+- dialoguer avec l'utilisateur ;
+- diagnostiquer une erreur ;
+- accélérer une macro longue.
+
+Le bon réflexe n'est pas de mémoriser chaque nom, mais de reconnaître la famille du besoin puis de retrouver la fonction adaptée.
+
+`Application.ScreenUpdating = False` peut accélérer une macro qui modifie beaucoup l'écran, mais il faut penser à réactiver l'affichage à la fin, surtout en cas d'erreur.
 -->

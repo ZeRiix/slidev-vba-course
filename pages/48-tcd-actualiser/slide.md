@@ -24,9 +24,13 @@ End Sub
 - La macro ne recrée pas le TCD : elle automatise son actualisation.
 
 <!--
-Notes formateur :
+Mémo :
 
-Montrer dans Excel où trouver le nom du TCD si possible.
+Un TCD peut être construit à la main dans Excel, puis simplement actualisé par VBA.
 
-Ne pas détailler la création complète d'un tableau croisé dynamique.
+`Worksheets("Report").PivotTables("PivotSales")` cible un TCD existant par le nom de sa feuille et son nom d'objet.
+
+`RefreshTable` recalcule le TCD à partir de sa source actuelle. La macro ne change pas encore cette source.
+
+Le nom du TCD est donc une dépendance importante : si l'objet est renommé dans Excel, le code doit suivre.
 -->

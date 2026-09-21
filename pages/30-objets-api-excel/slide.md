@@ -74,19 +74,26 @@ End Sub
 </style>
 
 <!--
-Notes formateur :
+Mémo :
 
-Commencer par la définition générale : une API est une interface fournie par un logiciel, une bibliothèque ou un système pour permettre à du code d'interagir avec lui.
+Une **API** est une interface fournie par un logiciel pour permettre à du code d'utiliser ses fonctionnalités.
 
-Dans VBA, Office expose des API qui donnent accès aux éléments manipulables d'Excel, Word, Outlook, etc. Excel expose par exemple des classeurs, des feuilles, des cellules, des tableaux, des graphiques, des TCD ou des formes.
+Excel expose des objets comme les classeurs, feuilles, plages, tableaux, graphiques, TCD ou formes. VBA ne recrée pas Excel : il utilise les points d'entrée qu'Excel met à disposition.
 
-Un objet est une valeur qui représente quelque chose que le programme peut manipuler. L'objet regroupe généralement :
-- des propriétés : lire ou modifier un état (`Value`, `Name`, `Font.Bold`, `Interior.Color`) ;
-- des méthodes : demander une action (`ClearContents`, `Copy`, `Select`, `RefreshTable`).
+Un **objet** représente quelque chose que le programme peut manipuler.
 
-Rester simple : on ne parle pas de définition de classes, de constructeurs ou de création de nouveaux types d'objets. Ici, on manipule les objets fournis par l'API Excel.
+Une **propriété** lit ou modifie un état :
 
-Phrase utile à l'oral : VBA n'invente pas Excel, il utilise les points d'entrée qu'Excel met à disposition pour lire, modifier ou déclencher des actions.
+```vb
+Range("A1").Value = "OK"
+Range("A1").Font.Bold = True
+```
 
-Point de vigilance : `Range("A1").Value = "OK"` modifie une propriété ; `Range("A1").ClearContents` appelle une méthode.
+Une **méthode** déclenche une action :
+
+```vb
+Range("A1").ClearContents
+```
+
+Repère utile : `objet.propriété` décrit souvent un état ; `objet.méthode(...)` demande souvent une action.
 -->

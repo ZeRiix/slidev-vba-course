@@ -29,12 +29,11 @@ End Sub
 - `Case Else` pour le reste.
 
 <!--
-Notes formateur :
+Mémo :
 
-Expliquer que Select Case évite une longue chaîne de ElseIf quand on teste la même variable.
+`Select Case` est utile quand plusieurs branches dépendent de la même expression de départ.
 
-À faire manipuler :
-- changer status ;
-- ajouter un Case "Late" ;
-- demander ce qui se passe avec une valeur inconnue.
+Il remplace avantageusement une longue série de `ElseIf status = ...`, surtout quand les valeurs possibles sont des libellés métier.
+
+`Case Else` joue le rôle de filet de sécurité : il traite les valeurs inconnues, mal saisies ou non encore prévues.
 -->

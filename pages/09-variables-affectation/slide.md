@@ -23,17 +23,13 @@ End Sub
 - **Déclarer avant d'utiliser** : VBA doit connaître le nom et le type de la variable.
 
 <!--
-Notes formateur :
+Mémo :
 
-Faire verbaliser la différence entre déclarer et affecter.
+`Dim` sert à **déclarer** une variable : on annonce à VBA qu'un nom va exister pendant l'exécution.
 
-À expliquer :
-- Dim crée la variable ;
-- As précise le type ;
-- = affecte une valeur ;
-- Debug.Print lit la valeur et l'affiche.
+`As String` ou `As Integer` précise le **type**, donc la nature des valeurs acceptées et une partie des opérations possibles.
 
-Insister sur le fait que = ne démarre pas une formule comme dans Excel.
+Dans cet exemple, `firstName` et `age` sont des variables **locales** : elles existent seulement pendant l'exécution de `VariableExample`.
 
-Il existe aussi des variables déclarées hors procédure, au niveau du module avec Private ou Public. Ne pas les présenter ici : pour débuter, on garde les variables locales dans une Sub afin d'éviter les effets de bord.
+Déclarer séparément puis affecter aide à distinguer deux questions : "quel emplacement mémoire est disponible ?" et "quelle valeur met-on dedans maintenant ?"
 -->

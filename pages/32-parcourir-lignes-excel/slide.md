@@ -31,7 +31,11 @@ End Sub
 - La règle est la même pour chaque ligne.
 
 <!--
-Notes formateur :
+Mémo :
 
-Faire le lien avec l'exercice précédent : même logique, mais la source n'est plus un tableau VBA. La source devient une feuille Excel.
+La logique est la même que pour un tableau VBA : répéter une règle pour plusieurs éléments.
+
+La différence est la source des données : ici, l'élément courant est une ligne Excel, et `rowIndex` sert à construire les adresses avec `Cells(rowIndex, colonne)`.
+
+Les numéros de colonnes rendent la macro compacte mais moins lisible. En révision, garder le mapping en tête : colonne B = `2`, colonne C = `3`.
 -->

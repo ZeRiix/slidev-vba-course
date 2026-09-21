@@ -26,9 +26,11 @@ End Sub
 />
 
 <!--
-Notes formateur :
+Mémo :
 
-Faire le lien avec les conversions : InputBox ne devine pas le type métier attendu.
+`InputBox` renvoie toujours une chaîne de caractères. Même si l'utilisateur tape `1200`, VBA reçoit d'abord du texte.
 
-Ne pas encore traiter annulation, saisie vide ou validation complète.
+La conversion (`CCur`, `CLng`, `CDate`, etc.) marque le moment où le texte devient une valeur métier utilisable dans des calculs ou des comparaisons.
+
+Dans un vrai fichier, il faut aussi penser aux saisies vides, annulées ou invalides. Cette slide garde seulement le chemin nominal.
 -->

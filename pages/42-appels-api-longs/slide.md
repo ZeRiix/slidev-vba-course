@@ -22,9 +22,13 @@ Workbooks.OpenText _
 - La logique reste souvent simple : ouvrir, copier, formater, fermer.
 
 <!--
-Notes formateur :
+Mémo :
 
-Ne pas faire un cours sur tous les paramètres optionnels.
+Les API Office ont souvent beaucoup de paramètres parce qu'elles couvrent de nombreux cas d'usage.
 
-Message à faire passer : quand une API Office a beaucoup de paramètres, on lit surtout les noms des arguments et on repère les quelques valeurs qui changent vraiment.
+La syntaxe `NomArgument:=valeur` rend l'appel plus lisible : on comprend quelle option est renseignée sans mémoriser l'ordre complet des paramètres.
+
+Le caractère `_` continue une instruction sur la ligne suivante. Il ne change pas la logique ; il rend seulement un appel long lisible.
+
+En révision, lire ce type de bloc en cherchant d'abord : quel fichier ? quel format ? quel séparateur ? quelle destination ?
 -->

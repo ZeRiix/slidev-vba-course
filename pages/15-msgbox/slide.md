@@ -26,9 +26,11 @@ MsgBox "Montant invalide", vbExclamation, "Contrôle"
 />
 
 <!--
-Notes formateur :
+Mémo :
 
-Montrer le premier exemple, puis le deuxième uniquement pour illustrer icône et titre.
+`MsgBox` est destiné à l'utilisateur final : confirmation, avertissement ou message d'erreur compréhensible.
 
-Ne pas lister tous les boutons ni toutes les constantes.
+À distinguer de `Debug.Print`, qui sert au développeur pendant la construction de la macro.
+
+Une boîte de dialogue interrompt l'exécution tant que l'utilisateur n'a pas répondu. C'est utile pour un message important, mais gênant dans une macro longue ou répétitive.
 -->

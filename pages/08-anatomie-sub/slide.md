@@ -21,16 +21,13 @@ End Sub
 - Une instruction par ligne
 
 <!--
-Notes formateur :
+Mémo :
 
-Partir de ce bloc comme forme minimale.
+`Sub` définit une **procédure** : un bloc d'instructions regroupées sous un nom et exécutables ensemble.
 
-Expliquer :
-- Option Explicit se place en haut du module ;
-- Sub ouvre une procédure ;
-- End Sub ferme la procédure ;
-- le nom ne contient pas d'espace ;
-- Debug.Print permet de voir un résultat sans modifier Excel.
+`Option Explicit` se place en haut d'un module. Son intérêt principal est de transformer une faute de frappe dans un nom de variable en erreur détectable, au lieu de laisser VBA créer ou interpréter un nom inattendu.
 
-Ne pas encore parler de Function, paramètres ou portée avancée.
+Le nom d'une procédure sert de point d'entrée : c'est ce nom que l'on lancera depuis le VBE, depuis Excel ou depuis une autre procédure.
+
+`Debug.Print` permet d'observer ce que fait le programme sans écrire dans une cellule ni afficher de boîte de dialogue.
 -->

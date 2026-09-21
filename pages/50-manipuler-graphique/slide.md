@@ -26,9 +26,17 @@ End Sub
 - Comme pour un TCD, le plus simple est souvent de préparer le graphique à la main puis de l'actualiser.
 
 <!--
-Notes formateur :
+Mémo :
 
-Ne pas créer une section complète sur les graphiques.
+Un graphique placé sur une feuille est généralement manipulé en deux étapes :
 
-Faire le lien avec les objets Excel : feuille > ChartObjects > Chart.
+```text
+Worksheet
+└── ChartObjects("Chart 1")
+    └── Chart
+```
+
+`ChartObject` est le conteneur posé sur la feuille. Sa propriété `.Chart` donne accès au graphique lui-même : titre, source, séries, type de graphique.
+
+Comme pour les TCD, une stratégie simple consiste souvent à préparer le graphique à la main, puis à automatiser son actualisation.
 -->

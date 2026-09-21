@@ -30,9 +30,13 @@ End Sub
 - Si la source reste une plage, il faut parfois recréer le `PivotCache`.
 
 <!--
-Notes formateur :
+Mémo :
 
-Comparer rapidement plage fixe et Table Excel structurée.
+Le problème visé ici n'est pas l'actualisation du TCD, mais la taille de sa source.
 
-Message principal : convertir la source en Table est souvent la meilleure solution avant d'écrire plus de VBA.
+Si la source reste `A1:D20`, les nouvelles lignes ajoutées en dessous peuvent être ignorées. `CurrentRegion` recalcule une plage autour des données présentes.
+
+`ChangePivotCache` reconnecte le TCD à une nouvelle source. C'est plus fort qu'un simple `RefreshTable`, qui ne fait que relire la source déjà connue.
+
+Quand c'est possible, convertir les données en Table structurée reste souvent la solution la plus stable : la Table suit naturellement les ajouts de lignes.
 -->

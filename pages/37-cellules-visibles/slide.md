@@ -31,9 +31,11 @@ End Sub
 - Sans cela, une boucle peut traiter aussi les lignes masquées par le filtre.
 
 <!--
-Notes formateur :
+Mémo :
 
-Faire une démonstration courte : appliquer un filtre dans Excel, sélectionner une colonne de montants, lancer une macro qui colore uniquement les montants encore visibles.
+Un filtre Excel masque des lignes, mais ne les retire pas de la plage.
 
-Ne pas détailler toute l'API AutoFilter ici. Le message important est que le filtre masque des lignes, mais ne les retire pas de la Range.
+Sans `SpecialCells(xlCellTypeVisible)`, une boucle peut traiter des cellules que l'utilisateur ne voit plus après filtrage.
+
+Cette distinction est importante pour les macros "assistées par l'utilisateur" : la sélection visible à l'écran n'est pas toujours équivalente à toutes les cellules contenues dans la plage.
 -->

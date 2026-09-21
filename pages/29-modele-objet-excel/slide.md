@@ -113,11 +113,20 @@ slide_info: false
 </style>
 
 <!--
-Notes formateur :
+Mémo :
 
-Commencer par l'explication simple : Excel donne des noms aux éléments visibles du fichier pour que le code puisse les viser.
+Le modèle objet donne des noms programmables aux éléments visibles d'Excel.
 
-Ne pas encore détailler la programmation objet ici. Cette slide sert juste à créer le lien visuel : classeur > feuille > cellule/plage.
+Modèle mental simplifié :
 
-Point important : `Range("B2")` et `Cells(2, 2)` peuvent désigner la même cellule, mais pas avec la même manière de l'écrire.
+```text
+Application
+└── Workbook
+    └── Worksheet
+        └── Range
+```
+
+`Range("B2")` et `Cells(2, 2)` peuvent désigner la même cellule. `Range` est lisible quand l'adresse est connue ; `Cells` devient pratique quand la ligne ou la colonne est calculée dans une boucle.
+
+Quand un objet n'est pas qualifié, par exemple `Range("A1")`, VBA utilise le contexte actif. Écrire `sheet.Range("A1")` rend la feuille ciblée explicite.
 -->

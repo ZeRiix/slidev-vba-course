@@ -25,9 +25,11 @@ End Sub
 />
 
 <!--
-Notes formateur :
+Mémo :
 
-Montrer la fenêtre Exécution / Immediate Window dans le VBE.
+Déboguer consiste d'abord à observer l'état réel du programme : quelle valeur contient la variable, quelle branche du `If` est prise, combien de tours fait la boucle.
 
-Insister sur le réflexe : regarder une valeur avant de modifier tout le code.
+`Debug.Print` écrit dans la fenêtre Exécution du VBE. C'est temporaire : cela ne change pas le classeur Excel et ne fait pas partie du résultat livré à l'utilisateur.
+
+Bon réflexe : vérifier une hypothèse avec une impression courte avant de modifier plusieurs lignes de code.
 -->

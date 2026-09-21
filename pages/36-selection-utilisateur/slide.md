@@ -31,12 +31,13 @@ End Sub
 - `Offset(0, 1)` écrit à droite.
 
 <!--
-Notes formateur :
+Mémo :
 
-Présenter ce pattern comme très pratique mais dangereux si on ne vérifie pas la sélection.
+`Selection` rend une macro flexible parce qu'elle agit sur ce que l'utilisateur a choisi avant de lancer le code.
 
-Image souhaitée : une capture Excel avec B2:B6 sélectionné, colonne C vide, puis annotations : "Selection" sur B2:B6 et "Offset(0, 1)" vers C2:C6.
+Cette flexibilité a un prix : si l'utilisateur sélectionne une image, une cellule isolée ou la mauvaise colonne, la macro peut échouer ou écrire au mauvais endroit.
 
-Raccourci possible sans code : Alt+F8 > sélectionner la macro > Options > raccourci clavier.
-Mentionner aussi `Application.OnKey` pour les curieux, sans forcément le faire coder.
+`TypeName(Selection) <> "Range"` est donc une garde minimale pour vérifier que la sélection est bien une plage Excel.
+
+`Offset(0, 1)` signifie : même ligne, une colonne à droite. C'est un déplacement relatif depuis chaque cellule parcourue.
 -->

@@ -17,9 +17,13 @@ Les contrôles de formulaire ouvrent des possibilités, mais ils ajoutent aussi 
 Pour une saisie simple, une cellule nommée avec validation de données suffit souvent.
 
 <!--
-Notes formateur :
+Mémo :
 
-Ne pas partir vers les UserForms.
+Les contrôles Excel ajoutent une couche d'interface au classeur. Ils sont utiles quand l'utilisateur doit choisir une option sans toucher au code.
 
-Message : les contrôles existent, mais le meilleur contrôle Excel reste parfois une cellule bien préparée.
+Mais chaque contrôle ajoute aussi de la maintenance : lien avec une cellule, nom du contrôle, comportement à tester, compatibilité avec la feuille.
+
+Pour une saisie simple, une cellule nommée avec validation de données est souvent plus robuste qu'un contrôle graphique.
+
+La question à se poser : est-ce que le contrôle simplifie vraiment l'usage, ou est-ce qu'une cellule bien préparée suffit ?
 -->

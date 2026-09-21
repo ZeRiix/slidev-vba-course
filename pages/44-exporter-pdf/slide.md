@@ -27,9 +27,13 @@ End Sub
 - Sur une `Range`, on peut exporter seulement une zone préparée.
 
 <!--
-Notes formateur :
+Mémo :
 
-Rester sur la recette utile : chemin, type PDF, objet cible.
+`ExportAsFixedFormat` transforme un objet Excel en livrable fixe, ici un PDF.
 
-Montrer éventuellement qu'une mise en page propre dans Excel améliore directement le PDF généré.
+Le résultat dépend de l'objet cible : une feuille exporte sa zone imprimable ou son contenu selon la mise en page ; une `Range` permet de limiter l'export à une zone préparée.
+
+Le chemin complet dans `Filename` évite de dépendre du dossier courant d'Excel. `ThisWorkbook.Path` est souvent utilisé pour écrire à côté du fichier automatisé.
+
+Un PDF propre commence souvent par une feuille Excel bien préparée : largeur de colonnes, titres, zone d'impression et formats.
 -->

@@ -36,9 +36,13 @@ End Sub
 - Le reste peut rester fourni comme une recette.
 
 <!--
-Notes formateur :
+Mémo :
 
-Présenter `OpenText` comme une recette d'import, pas comme une syntaxe à mémoriser.
+`Workbooks.OpenText` ouvre le CSV comme un classeur temporaire. Ensuite, la macro copie les cellules utiles vers le classeur qui contient le code.
 
-Montrer que les paramètres nommés rendent le bloc lisible : on comprend le chemin, le type de fichier, le séparateur et la destination.
+`ThisWorkbook` désigne le classeur où se trouve la macro. `ActiveWorkbook`, juste après l'ouverture du CSV, désigne le classeur CSV qui vient de devenir actif.
+
+Cette différence est cruciale : confondre les deux peut faire copier depuis ou vers le mauvais fichier.
+
+Fermer `csvWorkbook` avec `SaveChanges:=False` évite de laisser ouvert un classeur intermédiaire et de demander une sauvegarde inutile.
 -->

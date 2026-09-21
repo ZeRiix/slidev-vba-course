@@ -23,14 +23,11 @@ End Sub
 - Sinon la boucle ne s'arrête pas.
 
 <!--
-Notes formateur :
+Mémo :
 
-Insister sur le danger principal : oublier counter = counter + 1.
+`Do While` convient quand la répétition dépend d'une condition plutôt que d'un nombre de tours connu à l'avance.
 
-Mentionner rapidement qu'il existe d'autres formes de boucles en VBA pour les curieux : Do Until, Loop While, Loop Until. Ne pas les détailler ici.
+Comme le test est évalué avant chaque tour, le bloc peut ne jamais s'exécuter si la condition est fausse dès le départ.
 
-À faire manipuler :
-- changer la limite ;
-- démarrer à 3 ;
-- demander combien de lignes seront affichées avant exécution.
+Le piège principal est la boucle infinie : la variable utilisée dans la condition doit évoluer dans le bloc, ou quelque chose doit finir par rendre la condition fausse.
 -->

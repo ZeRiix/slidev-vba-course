@@ -30,9 +30,13 @@ End Sub
 />
 
 <!--
-Notes formateur :
+Mémo :
 
-Montrer que l'objectif est de reprendre la main et d'expliquer le problème.
+Gérer une erreur ne veut pas dire la cacher. L'objectif est de reprendre la main pour afficher un message clair, nettoyer si nécessaire, puis éviter un arrêt brutal incompréhensible.
 
-Ne pas détailler les numéros d'erreur, les reprises complexes ni les gestionnaires imbriqués.
+`On Error GoTo ErrorHandler` détourne l'exécution vers une étiquette quand une erreur technique survient.
+
+`Exit Sub` avant l'étiquette évite d'exécuter le gestionnaire d'erreur quand tout s'est bien passé.
+
+`On Error Resume Next` doit rester exceptionnel : il continue malgré l'erreur et peut donc masquer silencieusement un problème réel.
 -->

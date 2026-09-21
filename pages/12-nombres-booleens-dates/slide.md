@@ -29,13 +29,11 @@ End Sub
 - Une date littérale s'écrit entre `#`.
 
 <!--
-Notes formateur :
+Mémo :
 
-Faire remarquer les écritures :
-- nombre sans guillemets ;
-- booléen avec True ou False ;
-- date littérale entourée de # en VBA ;
-- multiplication comme en programmation classique.
+Les guillemets changent la nature de la valeur : `"12.5"` est du texte, alors que `12.5` est un nombre.
 
-Indiquer que les dates peuvent être piégeuses selon les formats régionaux. Pour le moment, on reste sur des exemples simples et contrôlés.
+Un `Boolean` sert souvent à représenter un état ou le résultat d'un test : actif/inactif, trouvé/non trouvé, valide/invalide.
+
+Les dates littérales VBA s'écrivent entre `#`. Les formats de date peuvent être sensibles aux paramètres régionaux ; dans un vrai fichier, on privilégie souvent une date venant d'une cellule ou une conversion contrôlée plutôt qu'une date ambiguë écrite en dur.
 -->

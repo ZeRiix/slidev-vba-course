@@ -53,9 +53,18 @@ End Sub
 </div>
 
 <!--
-Notes formateur :
+Mémo :
 
-Le README reproduit la consigne. L'import CSV et l'export PDF sont fournis pour éviter un exercice de recopie.
+Cet exercice assemble les blocs vus séparément : importer, nettoyer, transformer, présenter, déclencher.
 
-Faire vérifier que le bouton déclenche bien RefreshReport depuis Excel, pas depuis le VBE.
+Les procédures fournies (`ImportReportingCsv`, `ExportReportToPdf`) jouent le rôle de briques techniques. Le travail principal consiste à écrire l'orchestration métier dans `RefreshReport`.
+
+Une bonne lecture du workflow :
+
+1. récupérer les données brutes dans `Data` ;
+2. appliquer les règles de transformation ;
+3. produire une synthèse lisible dans `Report` ;
+4. offrir un bouton comme point d'entrée utilisateur.
+
+La macro finale doit pouvoir être relancée sans nettoyage manuel entre deux essais.
 -->

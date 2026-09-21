@@ -30,9 +30,13 @@ End Sub
 - Qualifier avec `sheet` évite les ambiguïtés.
 
 <!--
-Notes formateur :
+Mémo :
 
-Insister sur le fait qu'une macro robuste ne dépend pas d'un nombre de lignes fixe.
+Une macro robuste évite les nombres de lignes écrits en dur : le fichier réel peut contenir 3 lignes aujourd'hui et 500 demain.
 
-Montrer le cas simple : tableau sans ligne vide. Expliquer que `CurrentRegion` s'arrête aux lignes/colonnes vides.
+`sheet.Cells(sheet.Rows.Count, "A")` part de la dernière cellule possible de la colonne A, puis `.End(xlUp)` remonte jusqu'à la première cellule remplie rencontrée.
+
+`CurrentRegion` récupère le bloc continu autour d'une cellule. Il s'arrête aux lignes ou colonnes entièrement vides, ce qui peut surprendre si le tableau contient des trous.
+
+`Set` est nécessaire ici parce que `sheet` et `dataRange` contiennent des références vers des objets Excel, pas de simples valeurs.
 -->

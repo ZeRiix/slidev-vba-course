@@ -53,9 +53,13 @@ Fonctions attendues :
 </div>
 
 <!--
-Notes formateur :
+Mémo :
 
-C'est l'exercice qui rassemble les bases VB : tableaux, Split, variables, conversions, conditions, fonctions, boucles.
+Cet exercice rassemble les bases du langage avant Excel : tableau, boucle, découpage de texte, conversion, conditions et fonctions.
 
-Ne pas chercher une correction parfaite tout de suite. L'objectif est de les faire manipuler et de faire émerger le besoin de découpage.
+Le point clé est de transformer progressivement une ligne texte en informations typées :
+
+`"Nadia Martin;Pending;1200"` -> morceaux avec `Split` -> montant converti avec `CCur` -> action calculée par une `Function`.
+
+Le découpage en `GetAction` et `IsHighAmount` évite de tout mettre dans la boucle principale.
 -->

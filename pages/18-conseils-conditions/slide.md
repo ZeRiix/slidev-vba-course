@@ -49,14 +49,13 @@ End If
 - Moins de `End If` à suivre.
 
 <!--
-Notes formateur :
+Mémo :
 
-Expliquer l'idée de conditions exclusives : un seul chemin doit être pris.
+Le deuxième exemple organise les cas comme une série de chemins exclusifs : montant invalide, sinon montant important, sinon montant normal.
 
-Mauvais réflexe à éviter :
-- If dans un If dans un If ;
-- plusieurs conditions qui peuvent se contredire ;
-- blocs longs où on ne sait plus à quel End If on est rattaché.
+Cette forme évite d'empiler des `If` dans des `If`, ce qui rend vite difficile de savoir à quel `End If` correspond chaque bloc.
 
-Dire clairement que VBA n'aide pas beaucoup côté expérience développeur : beaucoup de End If, peu de confort visuel, erreurs parfois peu explicites. D'où l'intérêt de garder des blocs courts et lisibles.
+Dans un langage comme VBA, la lisibilité est une protection : l'éditeur signale certaines erreurs, mais il ne rend pas automatiquement une règle métier claire.
+
+Quand les branches deviennent longues, extraire une règle dans une `Function` peut rendre le code plus facile à tester.
 -->

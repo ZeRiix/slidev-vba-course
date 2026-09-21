@@ -29,9 +29,13 @@ End Sub
 - Une table nommée suit mieux les ajouts de lignes qu'une plage écrite en dur.
 
 <!--
-Notes formateur :
+Mémo :
 
-Montrer dans Excel : transformer une plage en table, lui donner le nom TableClients, ajouter une ligne, puis relancer la macro.
+Une Table Excel structurée est représentée en VBA par un `ListObject`.
 
-Rester volontairement limité : nom de table, corps des données, lignes. Les colonnes nommées, les filtres de table et les connexions seront vus plus tard si le projet le demande.
+Son avantage principal est qu'elle porte un nom et s'étend naturellement quand on ajoute des lignes. Le code dépend moins d'une adresse fixe comme `A1:D20`.
+
+`DataBodyRange` désigne le corps des données, sans la ligne d'en-tête. `ListRows` permet de parcourir les lignes de la table comme une collection.
+
+Dans un fichier métier, une Table nommée est souvent plus stable qu'une plage détectée approximativement.
 -->

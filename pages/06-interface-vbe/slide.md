@@ -53,16 +53,13 @@ slide_info: false
 </style>
 
 <!--
-Notes formateur :
+Mémo :
 
-Faire lire la capture de gauche à droite, en suivant les couleurs.
+L'Explorateur de projets ne liste pas seulement des fichiers : il montre les projets VBA chargés, leurs objets Excel et leurs modules.
 
-À présenter :
-- explorateur de projet : liste les classeurs ouverts et leurs objets VBA ;
-- zone de code : endroit où l'on écrit les procédures ;
-- fenêtre Propriétés : utile plus tard, surtout avec les feuilles et formulaires ;
-- barre d'outils : accès rapide aux actions courantes, notamment exécuter/stopper ;
-- fenêtre Exécution : affiche les messages de debug avec Debug.Print.
+Une macro n'est donc pas stockée dans un unique grand fichier : le code est organisé dans des modules, et certains objets Excel comme les feuilles ou le classeur peuvent aussi contenir du code.
 
-L'objectif n'est pas de connaître tous les menus, mais de retrouver rapidement où écrire, où lancer et où vérifier.
+La fenêtre Exécution est surtout utile pendant le développement : `Debug.Print` y affiche des valeurs sans modifier la feuille Excel.
+
+La fenêtre Propriétés devient importante dès qu'on manipule des objets Excel ou des contrôles, car elle expose certains réglages de l'objet sélectionné.
 -->

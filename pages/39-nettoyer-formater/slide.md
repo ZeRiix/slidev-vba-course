@@ -34,9 +34,15 @@ End Sub
 - Ressource : CSV + squelette VBA.
 
 <!--
-Notes formateur :
+Mémo :
 
-Expliquer que le format n'est pas juste esthétique : il rend le résultat lisible et exploitable.
+Le format n'est pas seulement esthétique : il rend le résultat lisible, réutilisable et moins ambigu pour l'utilisateur.
 
-Le dataset pourra être réutilisé plus tard pour un exercice de workflow plus complet.
+Dans une macro de reporting, on distingue souvent :
+
+- le nettoyage des anciennes valeurs (`ClearContents`) ;
+- la mise en forme de lecture (`AutoFit`, en-têtes, couleurs) ;
+- le format métier (`NumberFormat` pour montants, dates, pourcentages).
+
+Une bonne macro peut relancer le traitement plusieurs fois sans laisser des commentaires ou formats incohérents d'une ancienne exécution.
 -->

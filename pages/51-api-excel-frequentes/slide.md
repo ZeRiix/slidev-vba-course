@@ -21,9 +21,17 @@ slide_info: false
 | Graphiques | `ChartObjects`, `Chart`, `SetSourceData` | créer un graphique et changer sa source |
 
 <!--
-Notes formateur :
+Mémo :
 
-Présenter comme une carte des principales API rencontrées pendant le cours, pas comme une liste à mémoriser.
+Cette slide est une carte de recherche, pas une liste à apprendre par coeur.
 
-L'objectif est d'en faire une aide-mémoire : quand un besoin revient, on retrouve la famille d'objets, puis on repart vers la documentation ou vers une macro du cours pour retrouver la syntaxe exacte.
+Quand un besoin revient, commencer par identifier la famille :
+
+- lire ou écrire une cellule -> `Range`, `Cells`, `.Value` ;
+- trouver une zone -> `CurrentRegion`, `.End(xlUp)` ;
+- agir sur le choix utilisateur -> `Selection`, `SpecialCells` ;
+- produire un livrable -> `ExportAsFixedFormat` ;
+- actualiser une synthèse -> `PivotTables`, `RefreshTable`.
+
+Une fois la famille retrouvée, repartir vers une macro du cours ou vers la documentation pour récupérer la syntaxe exacte.
 -->

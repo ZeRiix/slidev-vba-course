@@ -29,9 +29,11 @@ End Sub
 />
 
 <!--
-Notes formateur :
+Mémo :
 
-Présenter For Each comme une lecture naturelle : pour chaque élément dans la liste.
+`For Each` évite de manipuler un indice quand l'objectif est simplement de traiter chaque élément.
 
-Ne pas développer Selection ici : on retrouvera la syntaxe avec Excel plus tard.
+La variable placée après `For Each` représente l'élément courant. Ici, `tag` prend successivement chaque valeur du tableau.
+
+Cette écriture deviendra très naturelle avec les collections Excel : cellules d'une plage, feuilles d'un classeur, lignes d'une table, etc.
 -->

@@ -22,15 +22,13 @@ End Sub
 ```
 
 <!--
-Notes formateur :
+Mémo :
 
-À ce stade, ils savent écrire des Sub et des fonctions simples. Le nouveau point à poser est le lien entre code VB et action Excel.
+Une macro Excel est le point de rencontre entre une procédure VBA et l'interface Excel.
 
-Définition courte à donner : une macro est une procédure VBA que l'on peut déclencher depuis Excel pour automatiser une action.
+Techniquement, une macro est généralement une `Sub` accessible depuis Excel : menu Macros, raccourci, bouton, forme, événement ou autre déclencheur.
 
-Insister sur la différence :
-- écrire du code VB : construire une logique ;
-- créer une macro Excel : rendre cette logique déclenchable dans un classeur.
+Écrire du code VBA construit la logique. Créer une macro utilisable consiste à rendre cette logique déclenchable dans un classeur par quelqu'un qui n'ouvre pas forcément le VBE.
 
-Image souhaitée : une capture large avec Excel + VBE, ou une capture VBE montrant une Sub et la fenêtre Excel Macros / un bouton associé.
+Dans `Selection.Font.Bold = True`, `Selection` désigne ce que l'utilisateur a sélectionné dans Excel. C'est pratique, mais le résultat dépend donc de l'état de l'interface au moment du lancement.
 -->

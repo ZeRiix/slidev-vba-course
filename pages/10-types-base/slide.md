@@ -18,18 +18,15 @@ slide_info: false
 Hors périmètre ici : objets Excel, classes, formulaires.
 
 <!--
-Notes formateur :
+Mémo :
 
-Présenter les types comme une contrainte utile : le type indique ce que la variable a le droit de contenir.
+Un type est une contrainte utile : il dit à VBA comment interpréter une valeur et permet de détecter certaines erreurs plus tôt.
 
-Points à dire :
-- String pour du texte ;
-- Boolean pour True/False ;
-- Long est souvent préférable à Integer pour les entiers courants ;
-- Double pour les nombres décimaux ;
-- Currency pour les montants ;
-- Date contient une date et éventuellement une heure ;
-- Variant existe, mais on l'évite au début parce qu'il revient à dire "je laisse VBA deviner". Faire le lien avec any en TypeScript.
+Pour les entiers courants, `Long` est souvent préférable à `Integer` en VBA : c'est le choix robuste pour des numéros de lignes, des compteurs ou des quantités.
 
-Ne pas entrer dans les types objets : Worksheet, Range, Workbook, Object, etc. Ils seront vus dans la partie modèle objet.
+`Currency` est adapté aux montants parce qu'il évite certains effets d'arrondi des nombres décimaux binaires.
+
+`Variant` signifie que VBA accepte plusieurs natures de valeurs et décide à l'exécution. C'est pratique pour certaines API ou tableaux, mais moins clair pour apprendre et maintenir du code.
+
+Les types comme `Workbook`, `Worksheet` ou `Range` sont des types d'objets Excel ; ils appartiennent à la partie modèle objet.
 -->

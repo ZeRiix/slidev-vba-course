@@ -47,9 +47,13 @@ Résultat attendu :
 </div>
 
 <!--
-Notes formateur :
+Mémo :
 
-Premier exercice Excel volontairement simple : lecture cellule, condition, écriture cellule, boucle.
+Premier exercice Excel : lire une cellule, appliquer une condition, écrire le résultat dans une autre cellule, répéter sur plusieurs lignes.
 
-Ne pas encore gérer la dernière ligne dynamique si le groupe est fragile. Si le groupe suit bien, montrer ensuite comment remplacer 5 ou 6 par une dernière ligne calculée.
+Le but n'est pas encore de rendre la plage dynamique. On accepte une borne fixe pour isoler la mécanique principale :
+
+`For rowIndex = 2 To 5` -> lire B -> décider -> écrire C.
+
+La slide suivante montrera comment remplacer cette borne fixe par une dernière ligne calculée.
 -->

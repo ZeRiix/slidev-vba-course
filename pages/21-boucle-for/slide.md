@@ -21,13 +21,13 @@ End Sub
 - `Next` passe au tour suivant.
 
 <!--
-Notes formateur :
+Mémo :
 
-Faire lire la boucle à l'oral : pour counter de 1 à 5, afficher counter.
+`For` convient quand on connaît les bornes de répétition avant d'entrer dans la boucle.
 
-À faire manipuler :
-- passer de 1 To 10 ;
-- démarrer à 0 ;
-- ajouter Step 2 ;
-- afficher seulement un texte avec le numéro.
+Les bornes sont incluses : `1 To 5` exécute le bloc pour `1`, `2`, `3`, `4` et `5`.
+
+Le compteur est souvent utilisé soit comme valeur à afficher, soit comme indice de tableau, soit comme numéro de ligne Excel.
+
+`Step` permet de changer l'incrément quand on veut avancer de 2 en 2 ou parcourir en sens inverse.
 -->

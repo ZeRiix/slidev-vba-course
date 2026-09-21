@@ -17,18 +17,15 @@ import VbaSecurityTutorial from './VbaSecurityTutorial.vue'
 - Raccourci **Alt + F11**
 
 <!--
-Notes formateur :
+Mémo :
 
-Le VBE signifie Visual Basic Editor. C'est l'environnement dans lequel on écrit, lit et exécute le code VBA attaché à un fichier Office.
+**VBE** signifie **Visual Basic Editor**.
 
-Montrer deux accès :
-- onglet Développeur > Visual Basic ;
-- raccourci Alt + F11.
+C'est l'environnement dans lequel on écrit, lit, exécute et débogue le code VBA attaché à un fichier Office.
 
-Insister sur le fait que le VBE n'est pas une application isolée : il est lié au classeur ouvert et au projet VBA associé.
+Le VBE n'est pas un logiciel séparé d'Excel dans lequel le code vivrait tout seul : quand un classeur est ouvert, son **projet VBA** apparaît dans l'éditeur.
 
-Point sécurité à rappeler rapidement :
-- le fichier doit être enregistré en XLSM pour conserver le code VBA ;
-- Excel peut bloquer l'exécution des macros ;
-- activer les macros uniquement sur un fichier de confiance.
+Conséquence pratique : un classeur qui contient du VBA doit être enregistré dans un format compatible macros, par exemple `.xlsm`. Un `.xlsx` ne conserve pas le projet VBA.
+
+Excel peut bloquer les macros pour des raisons de sécurité. Activer les macros revient à autoriser du code à s'exécuter dans le fichier : on ne le fait que pour un document de confiance.
 -->

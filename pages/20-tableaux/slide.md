@@ -27,9 +27,11 @@ End Sub
 - Une boucle permet de tout parcourir.
 
 <!--
-Notes formateur :
+Mémo :
 
-Présenter le tableau comme un concept transversal : on le retrouvera avec Split, avec des listes de lignes, et plus tard avec les données venant d'Excel.
+Un tableau permet de garder plusieurs valeurs sous un seul nom de variable, puis d'accéder à chaque élément par son indice.
 
-Ne pas parler ici de tableaux multidimensionnels ni de ReDim Preserve.
+Avec `Array(...)`, les indices commencent généralement à `0`. Utiliser `LBound` et `UBound` évite de supposer les bornes et rend la boucle plus robuste.
+
+Ce modèle reviendra avec `Split`, avec les lignes de fichiers CSV et avec certaines valeurs récupérées depuis Excel.
 -->

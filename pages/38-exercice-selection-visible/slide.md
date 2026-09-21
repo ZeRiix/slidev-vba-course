@@ -57,9 +57,15 @@ Bonus : ajouter la date d'export en `Export!B1`.
 </div>
 
 <!--
-Notes formateur :
+Mémo :
 
-Faire manipuler dans Excel : filtrer par région, statut ou commercial, puis sélectionner les cellules visibles de la colonne Client sans l'en-tête.
+Cet exercice ne demande pas d'automatiser le filtre. L'utilisateur prépare le filtre dans Excel, puis la macro respecte ce choix.
 
-L'objectif n'est pas d'automatiser le filtre, mais de montrer que la macro respecte le filtre préparé manuellement par l'utilisateur.
+Le coeur du problème est donc :
+
+1. prendre la sélection courante ;
+2. ne garder que les cellules visibles ;
+3. recopier les valeurs dans une feuille de sortie propre.
+
+La feuille `Export` sert de livrable : la macro doit pouvoir être relancée sans accumuler les anciens résultats.
 -->

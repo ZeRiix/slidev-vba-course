@@ -46,14 +46,11 @@ End Sub
 </div>
 
 <!--
-Notes formateur :
+Mémo :
 
-Faire le parallèle avec SI dans Excel, mais insister sur la lecture en blocs.
+Une condition est une **expression booléenne** : après évaluation, elle vaut `True` ou `False`.
 
-Faire lire rapidement le tableau des opérateurs. L'objectif est que les étudiants sachent lire une condition simple, pas de faire un cours complet de logique booléenne.
+`If ... Then` ouvre un bloc exécuté seulement si le test est vrai. `Else` est optionnel : il sert à décrire le chemin alternatif quand on veut traiter l'autre cas.
 
-À faire manipuler :
-- changer amount à 800 ;
-- retirer Else pour montrer qu'il est optionnel ;
-- demander où commence et où finit le bloc conditionnel.
+`And`, `Or` et `Not` composent plusieurs tests, mais il faut rester lisible : une condition très longue cache souvent une règle métier qui mérite d'être découpée.
 -->
