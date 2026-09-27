@@ -15,12 +15,12 @@ slide_info: false
 ```vb
 If amount > 0 Then
     If amount > 1000 Then
-        Debug.Print "Montant important"
+        Call Debug.Print("Montant important")
     Else
-        Debug.Print "Montant normal"
+        Call Debug.Print("Montant normal")
     End If
 Else
-    Debug.Print "Montant invalide"
+    Call Debug.Print("Montant invalide")
 End If
 ```
 
@@ -32,11 +32,11 @@ End If
 
 ```vb
 If amount <= 0 Then
-    Debug.Print "Montant invalide"
+    Call Debug.Print("Montant invalide")
 ElseIf amount > 1000 Then
-    Debug.Print "Montant important"
+    Call Debug.Print("Montant important")
 Else
-    Debug.Print "Montant normal"
+    Call Debug.Print("Montant normal")
 End If
 ```
 

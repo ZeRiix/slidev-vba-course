@@ -18,7 +18,7 @@ Sub ValueExample()
     isActive = True
     deliveryDate = #12/31/2026#
 
-    Debug.Print quantity * unitPrice
+    Call Debug.Print(quantity * unitPrice)
 End Sub
 ```
 

@@ -13,8 +13,8 @@ Sub UpdateChart()
     Set chartObject = Worksheets("Report").ChartObjects("Chart 1")
 
     chartObject.Chart.ChartTitle.Text = "Ventes par région"
-    chartObject.Chart.SetSourceData _
-        Source:=Worksheets("Report").Range("A1:B5")
+    Call chartObject.Chart.SetSourceData( _
+        Source:=Worksheets("Report").Range("A1:B5"))
 End Sub
 ```
 

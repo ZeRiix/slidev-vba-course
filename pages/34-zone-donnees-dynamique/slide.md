@@ -17,8 +17,8 @@ Sub ReadDynamicTable()
     lastRow = sheet.Cells(sheet.Rows.Count, "A").End(xlUp).Row
     Set dataRange = sheet.Range("A1").CurrentRegion
 
-    Debug.Print "Dernière ligne : " & lastRow
-    Debug.Print "Zone : " & dataRange.Address
+    Call Debug.Print("Dernière ligne : " & lastRow)
+    Call Debug.Print("Zone : " & dataRange.Address)
 End Sub
 ```
 

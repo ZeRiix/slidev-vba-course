@@ -67,5 +67,9 @@ Le coeur du problème est donc :
 2. ne garder que les cellules visibles ;
 3. recopier les valeurs dans une feuille de sortie propre.
 
+`TypeName(Selection)` vérifie le type de la sélection courante. Ici, la macro s'arrête si l'utilisateur n'a pas sélectionné une plage Excel.
+
+`SpecialCells(xlCellTypeVisible)` conserve uniquement les cellules visibles, notamment après un filtre.
+
 La feuille `Export` sert de livrable : la macro doit pouvoir être relancée sans accumuler les anciens résultats.
 -->

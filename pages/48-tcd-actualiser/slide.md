@@ -2,7 +2,7 @@
 layout: StaticCodeExampleLayout
 kicker: Excel
 title: Actualiser un tableau croisé dynamique
-caption: Le cas courant : le TCD existe déjà, la macro le remet à jour.
+caption: "Le cas courant : le TCD existe déjà, la macro le remet à jour."
 slide_info: false
 ---
 
@@ -11,7 +11,7 @@ Sub RefreshPivot()
     Dim pivot As PivotTable
 
     Set pivot = Worksheets("Report").PivotTables("PivotSales")
-    pivot.RefreshTable
+    Call pivot.RefreshTable()
 End Sub
 ```
 

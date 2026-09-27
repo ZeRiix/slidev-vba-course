@@ -11,7 +11,7 @@ Sub ShowCustomerAction()
     Dim status As String
     status = "Pending"
 
-    Debug.Print GetAction(status)
+    Call Debug.Print(GetAction(status))
 End Sub
 
 Function GetAction(status As String) As String

@@ -21,8 +21,8 @@ Sub TextExample()
     cleanService = UCase(rawService)
     label = cleanName & " - " & cleanService
 
-    Debug.Print label
-    Debug.Print "Longueur : " & Len(label)
+    Call Debug.Print(label)
+    Call Debug.Print("Longueur : " & Len(label))
 End Sub
 ```
 
@@ -35,7 +35,7 @@ End Sub
 
 <TheDocumentation
   label="Documentation : fonctions de chaîne"
-  href="https://learn.microsoft.com/fr-fr/dotnet/visual-basic/language-reference/functions/string-functions"
+  href="https://learn.microsoft.com/fr-fr/office/vba/language/reference/functions-visual-basic-for-applications"
 />
 
 

@@ -16,7 +16,7 @@ Sub ConvertAmount()
     Exit Sub
 
 ErrorHandler:
-    MsgBox "Erreur : " & Err.Description
+    Call MsgBox("Erreur : " & Err.Description)
 End Sub
 ```
 

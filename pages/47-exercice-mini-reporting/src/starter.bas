@@ -5,15 +5,15 @@ Sub RefreshReport()
     Dim reportSheet As Worksheet
     Dim lastRow As Long
 
-    ImportReportingCsv
+    If Not ImportReportingCsv() Then Exit Sub
 
     Set dataSheet = GetOrCreateReportSheet("Data")
     Set reportSheet = GetOrCreateReportSheet("Report")
     lastRow = dataSheet.Cells(dataSheet.Rows.Count, "A").End(xlUp).Row
 
     ' TODO: prepare and format Data
-    ' TODO: build the summary in Report
-    ' TODO: calculate totals by service
+    ' TODO: calculate totals for Finance, RH and IT
+    ' TODO: build the Service / Total summary in Report
     ' TODO: highlight rows with status "À relancer"
 End Sub
 

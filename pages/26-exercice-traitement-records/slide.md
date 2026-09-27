@@ -1,6 +1,6 @@
 ---
 layout: ExerciseLayout
-kicker: Exercice final - Partie 2
+kicker: Exercice de synthèse
 title: Traiter des lignes clients
 duration: 35 min
 durationLabel: durée estimée
@@ -19,7 +19,8 @@ Point de départ :
 records = Array( _
     "Nadia Martin;Pending;1200", _
     "Paul Durand;Paid;850", _
-    "Emma Petit;Cancelled;400" _
+    "Emma Petit;Cancelled;400", _
+    "Lucas Bernard;Pending;650" _
 )
 ```
 
@@ -35,12 +36,21 @@ records = Array( _
 
 <div class="course-expected-result">
 
+Règles :
+
+- `Paid` : `Aucune action`
+- `Cancelled` : `Archiver`
+- `Pending` > 1000 : `Relance prioritaire`
+- `Pending` <= 1000 : `Relancer le client`
+- autre statut : `Vérifier manuellement`
+
 Résultat attendu :
 
 ```text
-Nadia Martin : Relancer le client
+Nadia Martin : Relance prioritaire
 Paul Durand : Aucune action
 Emma Petit : Archiver
+Lucas Bernard : Relancer le client
 ```
 
 Fonctions attendues :
@@ -61,5 +71,9 @@ Le point clé est de transformer progressivement une ligne texte en informations
 
 `"Nadia Martin;Pending;1200"` -> morceaux avec `Split` -> montant converti avec `CCur` -> action calculée par une `Function`.
 
+`Split(text, ";")` découpe la chaîne et renvoie un tableau. Ici, le séparateur est le point-virgule.
+
 Le découpage en `GetAction` et `IsHighAmount` évite de tout mettre dans la boucle principale.
+
+`IsHighAmount` doit servir à distinguer une relance normale d'une relance prioritaire.
 -->

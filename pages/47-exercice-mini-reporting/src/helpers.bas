@@ -1,28 +1,37 @@
 Option Explicit
 
-Sub ImportReportingCsv()
-    Dim filePath As String
+Function ImportReportingCsv() As Boolean
+    Dim selectedFile As Variant
     Dim csvWorkbook As Workbook
     Dim targetSheet As Worksheet
 
-    filePath = ThisWorkbook.Path & "\reporting_data.csv"
+    selectedFile = Application.GetOpenFilename( _
+        FileFilter:="Fichiers CSV (*.csv),*.csv", _
+        Title:="Sélectionner le fichier CSV")
+
+    If VarType(selectedFile) = vbBoolean Then
+        ImportReportingCsv = False
+        Exit Function
+    End If
+
     Set targetSheet = GetOrCreateSheet("Data")
 
-    targetSheet.Cells.Clear
+    Call targetSheet.Cells.Clear()
 
-    Workbooks.OpenText _
-        Filename:=filePath, _
+    Call Workbooks.OpenText( _
+        Filename:=selectedFile, _
         DataType:=xlDelimited, _
         Semicolon:=True, _
-        Local:=True
+        Local:=True)
 
     Set csvWorkbook = ActiveWorkbook
 
-    csvWorkbook.Worksheets(1).UsedRange.Copy _
-        Destination:=targetSheet.Range("A1")
+    Call csvWorkbook.Worksheets(1).UsedRange.Copy( _
+        Destination:=targetSheet.Range("A1"))
 
-    csvWorkbook.Close SaveChanges:=False
-End Sub
+    Call csvWorkbook.Close(SaveChanges:=False)
+    ImportReportingCsv = True
+End Function
 
 Sub ExportReportToPdf()
     Dim outputPath As String
@@ -31,9 +40,9 @@ Sub ExportReportToPdf()
     outputPath = ThisWorkbook.Path & "\reporting.pdf"
     Set reportSheet = GetOrCreateSheet("Report")
 
-    reportSheet.ExportAsFixedFormat _
+    Call reportSheet.ExportAsFixedFormat( _
         Type:=xlTypePDF, _
-        Filename:=outputPath
+        Filename:=outputPath)
 End Sub
 
 Private Function GetOrCreateSheet(sheetName As String) As Worksheet

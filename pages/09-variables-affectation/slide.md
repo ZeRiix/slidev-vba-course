@@ -15,8 +15,8 @@ Sub VariableExample()
     firstName = "Nadia"
     age = 19
 
-    Debug.Print firstName
-    Debug.Print age
+    Call Debug.Print(firstName)
+    Call Debug.Print(age)
 End Sub
 ```
 

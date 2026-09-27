@@ -12,7 +12,7 @@ Sub CountUntilLimit()
     counter = 1
 
     Do While counter <= 5
-        Debug.Print counter
+        Call Debug.Print(counter)
         counter = counter + 1
     Loop
 End Sub

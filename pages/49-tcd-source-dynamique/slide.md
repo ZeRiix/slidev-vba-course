@@ -14,11 +14,11 @@ Sub UpdatePivotSource()
     Set sourceRange = Worksheets("Data").Range("A1").CurrentRegion
     Set pivot = Worksheets("Report").PivotTables("PivotSales")
 
-    pivot.ChangePivotCache ThisWorkbook.PivotCaches.Create( _
+    Call pivot.ChangePivotCache(ThisWorkbook.PivotCaches.Create( _
         SourceType:=xlDatabase, _
-        SourceData:=sourceRange)
+        SourceData:=sourceRange))
 
-    pivot.RefreshTable
+    Call pivot.RefreshTable()
 End Sub
 ```
 

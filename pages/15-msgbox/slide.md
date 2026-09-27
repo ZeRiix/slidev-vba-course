@@ -8,12 +8,12 @@ slide_info: false
 
 ```vb
 Sub NotifyUser()
-    MsgBox "Traitement terminé"
+    Call MsgBox("Traitement terminé")
 End Sub
 ```
 
 ```vb
-MsgBox "Montant invalide", vbExclamation, "Contrôle"
+Call MsgBox("Montant invalide", vbExclamation, "Contrôle")
 ```
 
 - Confirmation de fin.

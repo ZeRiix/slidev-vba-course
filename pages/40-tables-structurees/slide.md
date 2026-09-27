@@ -14,10 +14,10 @@ Sub ReadCustomerTable()
     Set table = ActiveSheet.ListObjects("TableClients")
 
     For Each row In table.ListRows
-        Debug.Print row.Range.Cells(1, 1).Value
+        Call Debug.Print(row.Range.Cells(1, 1).Value)
     Next row
 
-    Debug.Print table.DataBodyRange.Address
+    Call Debug.Print(table.DataBodyRange.Address)
 End Sub
 ```
 

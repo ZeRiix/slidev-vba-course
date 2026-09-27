@@ -14,7 +14,7 @@ Sub TagsExample()
     tags = Array("urgent", "finance", "client")
 
     For index = LBound(tags) To UBound(tags)
-        Debug.Print UCase(tags(index))
+        Call Debug.Print(UCase(tags(index)))
     Next index
 End Sub
 ```

@@ -11,7 +11,7 @@ Sub ObserveAmount()
     Dim amount As Currency
     amount = 1200
 
-    Debug.Print amount
+    Call Debug.Print(amount)
 End Sub
 ```
 

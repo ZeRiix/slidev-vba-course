@@ -11,7 +11,7 @@ Option Explicit
 
 ' Writes a greeting in the Immediate window.
 Sub SayHello()
-    Debug.Print "Bonjour"
+    Call Debug.Print("Bonjour")
 End Sub
 ```
 

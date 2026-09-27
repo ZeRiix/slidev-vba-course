@@ -11,7 +11,7 @@ Sub DisplayNumbers()
     Dim counter As Long
 
     For counter = 1 To 5
-        Debug.Print counter
+        Call Debug.Print(counter)
     Next counter
 End Sub
 ```

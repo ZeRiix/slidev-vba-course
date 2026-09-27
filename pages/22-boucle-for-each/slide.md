@@ -14,7 +14,7 @@ Sub DisplayTags()
     tags = Array("urgent", "finance", "client")
 
     For Each tag In tags
-        Debug.Print tag
+        Call Debug.Print(tag)
     Next tag
 End Sub
 ```

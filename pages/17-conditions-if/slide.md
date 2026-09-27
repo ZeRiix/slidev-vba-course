@@ -16,9 +16,9 @@ Sub CheckAmount()
     amount = 1200
 
     If amount > 1000 Then
-        Debug.Print "Montant important"
+        Call Debug.Print("Montant important")
     Else
-        Debug.Print "Montant normal"
+        Call Debug.Print("Montant normal")
     End If
 End Sub
 ```

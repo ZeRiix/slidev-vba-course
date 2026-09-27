@@ -31,7 +31,7 @@ slide_info: false
 Sub UpdateCell()
     Range("A1").Value = "OK"
     Range("A1").Font.Bold = True
-    Range("A1").ClearContents
+    Call Range("A1").ClearContents()
 End Sub
 ```
 
@@ -92,7 +92,7 @@ Range("A1").Font.Bold = True
 Une **méthode** déclenche une action :
 
 ```vb
-Range("A1").ClearContents
+Call Range("A1").ClearContents()
 ```
 
 Repère utile : `objet.propriété` décrit souvent un état ; `objet.méthode(...)` demande souvent une action.

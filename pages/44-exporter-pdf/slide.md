@@ -12,9 +12,9 @@ Sub ExportReportToPdf()
 
     outputPath = ThisWorkbook.Path & "\reporting.pdf"
 
-    Worksheets("Report").ExportAsFixedFormat _
+    Call Worksheets("Report").ExportAsFixedFormat( _
         Type:=xlTypePDF, _
-        Filename:=outputPath
+        Filename:=outputPath)
 End Sub
 ```
 
@@ -36,4 +36,7 @@ Le résultat dépend de l'objet cible : une feuille exporte sa zone imprimable o
 Le chemin complet dans `Filename` évite de dépendre du dossier courant d'Excel. `ThisWorkbook.Path` est souvent utilisé pour écrire à côté du fichier automatisé.
 
 Un PDF propre commence souvent par une feuille Excel bien préparée : largeur de colonnes, titres, zone d'impression et formats.
+
+Documentation utile : `ExportAsFixedFormat`
+https://learn.microsoft.com/fr-fr/office/vba/api/excel.worksheet.exportasfixedformat
 -->

@@ -13,13 +13,13 @@ Sub CheckStatus()
 
     Select Case status
         Case "Paid"
-            Debug.Print "Aucune action"
+            Call Debug.Print("Aucune action")
         Case "Pending"
-            Debug.Print "Relancer le client"
+            Call Debug.Print("Relancer le client")
         Case "Cancelled"
-            Debug.Print "Archiver"
+            Call Debug.Print("Archiver")
         Case Else
-            Debug.Print "Statut inconnu"
+            Call Debug.Print("Statut inconnu")
     End Select
 End Sub
 ```

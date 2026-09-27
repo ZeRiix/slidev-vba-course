@@ -9,17 +9,11 @@ Sub ExportVisibleSelection()
     If TypeName(Selection) <> "Range" Then Exit Sub
 
     Set visibleCells = Selection.SpecialCells(xlCellTypeVisible)
-    Set exportSheet = GetOrCreateExportSheet()
 
-    exportSheet.Range("A1").Value = "Clients exportes"
-    exportSheet.Range("A2:A1000").ClearContents
-
-    nextRow = 2
-
-    For Each cell In visibleCells.Cells
-        ' TODO: copy the visible client name into the export sheet
-        nextRow = nextRow + 1
-    Next cell
+    ' TODO: prepare the Export sheet with GetOrCreateExportSheet
+    ' TODO: clear the previous export
+    ' TODO: loop through visibleCells
+    ' TODO: write client names starting from A2
 End Sub
 
 Private Function GetOrCreateExportSheet() As Worksheet
