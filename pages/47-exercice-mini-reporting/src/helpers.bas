@@ -37,7 +37,7 @@ Sub ExportReportToPdf()
     Dim outputPath As String
     Dim reportSheet As Worksheet
 
-    outputPath = ThisWorkbook.Path & "\reporting.pdf"
+    outputPath = ThisWorkbook.Path & Application.PathSeparator &"reporting.pdf"
     Set reportSheet = GetOrCreateSheet("Report")
 
     Call reportSheet.ExportAsFixedFormat( _
