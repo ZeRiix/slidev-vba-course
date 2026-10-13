@@ -10,7 +10,7 @@ slide_info: false
 Sub ExportReportToPdf()
     Dim outputPath As String
 
-    outputPath = ThisWorkbook.Path & "\reporting.pdf"
+    outputPath = ThisWorkbook.Path & Application.PathSeparator & "reporting.pdf"
 
     Call Worksheets("Report").ExportAsFixedFormat( _
         Type:=xlTypePDF, _

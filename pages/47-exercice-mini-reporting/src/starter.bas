@@ -1,6 +1,6 @@
 Option Explicit
 
-Sub RefreshReport()
+Public Sub RefreshReport()
     Dim dataSheet As Worksheet
     Dim reportSheet As Worksheet
     Dim lastRow As Long

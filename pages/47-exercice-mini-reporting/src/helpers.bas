@@ -1,13 +1,13 @@
 Option Explicit
 
-Function ImportReportingCsv() As Boolean
+Public Function ImportReportingCsv() As Boolean
     Dim selectedFile As Variant
     Dim csvWorkbook As Workbook
     Dim targetSheet As Worksheet
 
+    ' FileFilter:="Fichiers CSV (*.csv),*.csv" ' Erreur sur Mac
     selectedFile = Application.GetOpenFilename( _
-        FileFilter:="Fichiers CSV (*.csv),*.csv", _
-        Title:="Sélectionner le fichier CSV")
+        Title:="Selectionner le fichier CSV")
 
     If VarType(selectedFile) = vbBoolean Then
         ImportReportingCsv = False
@@ -15,11 +15,11 @@ Function ImportReportingCsv() As Boolean
     End If
 
     Set targetSheet = GetOrCreateSheet("Data")
-
     Call targetSheet.Cells.Clear()
 
     Call Workbooks.OpenText( _
         Filename:=selectedFile, _
+        Origin:=65001, _
         DataType:=xlDelimited, _
         Semicolon:=True, _
         Local:=True)
@@ -33,11 +33,11 @@ Function ImportReportingCsv() As Boolean
     ImportReportingCsv = True
 End Function
 
-Sub ExportReportToPdf()
+Public Sub ExportReportToPdf()
     Dim outputPath As String
     Dim reportSheet As Worksheet
 
-    outputPath = ThisWorkbook.Path & Application.PathSeparator &"reporting.pdf"
+    outputPath = ThisWorkbook.Path & Application.PathSeparator & "reporting.pdf"
     Set reportSheet = GetOrCreateSheet("Report")
 
     Call reportSheet.ExportAsFixedFormat( _
